@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<title>TreeVis</title>
+<style>
+
+/*
+.hull {
+  fill: white;
+  stroke: steelblue;
+  stroke-width: 5px;
+  stroke-linejoin: round;
+}*/
+
+.node circle {
+  fill: #fff;
+  stroke: black;
+  stroke-width: 2px;
+}
+
+.node text { font: 12px sans-serif; }
+
+.link {
+  fill: none;
+  stroke: #dfdfdf;
+  stroke-width: 2px;
+}
+
+text {
+    font-family: sans-serif;
+    font-size: 10px;
+}
+
+#content {
+  position: relative;
+  padding: 50px;
+  display: inline-block;
+  float: left;
+  width: 400px;
+  height: 400px;
+  margin-left: 180px;
+}
+
+#svg1 {
+	position: fixed;
+}
+
+/*#svg1 {
+  border-style: solid;
+  border-left-color: #000;
+  border-bottom-color: #000;
+  border-top-color: #fff;
+  border-right-color: #fff;
+}*/
+
+#content2 {
+  position: relative;
+  display: inline-block;
+  float: left;
+}
+
+.distortions {
+  	stroke: grey;
+    stroke-width: 1;
+    display: block;
+}
+
+nav {
+    float: left;
+    max-width: 210px;
+    min-width: 75px;
+    height: 100%;
+    margin: 0;
+    padding: 1em;
+    border-style: solid;
+    border-width: 0px 1px 0px 0px;
+	position: fixed; /**********/
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+  font-size: 14px;
+}
+
+button {
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+  color: #fff;
+  background-color: #bbbbbb;
+  border: none;
+  border-radius: 15px;
+}
+
+input {
+    border-radius: 15px;
+}
+
+</style>
+</head>
+<body>
+<nav>
+  <label for="direction">Direction (0-360°)</label>
+  <br>
+  <input type="text" name="direction" id="direction" value="45"><br>
+  <br>
+  <button type="button" id="directionButton">Redraw lines</button>
+  <br><br>
+  <button type="button" id="shiftingButton">Hide shifting lines</button>
+  <br>
+  <p id="SVMaccuracy"> </p>
+  <button type="button" id="animationButton">Show PCA</button>
+  <br>
+  <p>Distortion: <div id="distortionValue">-</div></p>
+</nav>
+<div id="content"></div>
+<div id="content2"></div>
+<script src="js/numeric-1.2.6.min.js"></script>
+<script src="js/geometry.js"></script>
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script src="js/pca.js"></script>
+<script src="js/intersection.js"></script>
+<script src="js/svmjs.js"></script>
+<script src="js/script.js"></script> 
+ 
+</body>
+</html>
