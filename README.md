@@ -14,7 +14,7 @@ In order to visualize your own dataset and decision tree model, use the files da
 
 Note that the decision tree has to be defined in the following format:
 
-```json
+```
 { ''variable'': ''x'', ''value'' : 5, ''children'': [
   	{ ''variable'': ''y'', ''value'': 4.1, ''children'': [
 		...
