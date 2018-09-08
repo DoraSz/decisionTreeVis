@@ -6,7 +6,7 @@ The visualization uses [D3](https://github.com/d3/d3), [NumericJS](http://www.nu
 
 # Online Demo
 
-A demo for the application is available [here](http://10.200.1.137/).
+A demo for the application is available [here](https://dorasz.github.io/decisionTreeVis/).
 
 # Usage
 
@@ -25,7 +25,7 @@ Note that the decision tree has to be defined in the following format:
 ]} 
 ```
 
-Make sure that the values of the "variable"-key corresponds to a column label in the header row of the CSV file. 
+Make sure that the values of the "variable"-key correspond to a column labels in the header row of the CSV file. 
 
 Define leaf nodes as
 
