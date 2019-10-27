@@ -1,6 +1,6 @@
 # decisionTreeVis
 
-This web-based application helps to visualize decision tree models on high-dimensional numerical datasets. The visualization method is based on a slightly distorted Principal Component Analysis, which enables the drawing of linear decision rules in 2D via SVM.
+This web-based application helps to visualize decision tree models on high-dimensional numerical datasets. The visualization method is based on a slightly distorted Principal Component Analysis, which enables the drawing of linear decision rules in 2D via SVM. You can read a paper on the details of the visualization method [here](https://www.researchgate.net/publication/329019886_Decision_Tree_Visualization_for_High-dimensional_Numerical_Data).
 
 The visualization uses [D3](https://github.com/d3/d3), [NumericJS](http://www.numericjs.com), [JS-Intersect](https://github.com/vrd/js-intersect) and [SvmJS](https://github.com/karpathy/svmjs).
 
