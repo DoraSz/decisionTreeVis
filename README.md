@@ -4,9 +4,11 @@ This web-based application helps to visualize decision tree models on high-dimen
 
 The visualization uses [D3](https://github.com/d3/d3), [NumericJS](http://www.numericjs.com), [JS-Intersect](https://github.com/vrd/js-intersect) and [SvmJS](https://github.com/karpathy/svmjs).
 
-# Online Demo
+# Online Demo and explanation video
 
-A demo for the application is available [here](https://dorasz.github.io/decisionTreeVis/).
+A demo for the application is available [here](https://dorasz.github.io/decisionTreeVis/), where you can try out the interactive parts of the visualization. Alternatively, you can watch the explanation video on Youtube:
+
+[![Video link](http://img.youtube.com/vi/R3KmSjPZ88o/0.jpg)](https://www.youtube.com/watch?v=R3KmSjPZ88o "Interactive Decision Tree Visualization")
 
 # Usage
 
